@@ -5,6 +5,7 @@ print("Welcome to the guessing game!")
 print("*****************************")
 
 chances = 0
+points = 1000
 
 while chances == 0:
     print("Choose level:\n(1) easy\n(2) intermediate\n(3) hard")
@@ -38,12 +39,13 @@ for guesses in range(0, chances):
     low = guess < secret_number
 
     if hit:
-        print("Gotcha! That's the answer of the Universe!")
+        print("Gotcha! That's the answer of the Universe! You got {} points".format(points))
         break
     else:
         if high:
             print("You missed! Too high.")
         elif low:
             print("You missed! Too low.")
+        points = points - abs(guess)
 
 print('Game Over, and thank you for the fish')
