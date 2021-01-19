@@ -1,0 +1,12 @@
+banana
+pineapple
+strawberry
+mango
+blueberry
+pear
+watermelon
+papaya
+kiwi
+orange
+lime
+lemon
